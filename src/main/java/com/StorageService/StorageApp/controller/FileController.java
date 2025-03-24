@@ -34,11 +34,11 @@ public class FileController {
     @GetMapping("/download")
     public ResponseEntity<Resource> downloadFile(
             @RequestParam String username,
-            @RequestParam String fileName
+            @RequestParam String filename
     ) throws FileNotFoundException {
-        Resource resource= fileService.downloadFile(username, fileName);
+        Resource resource= fileService.downloadFile(username, filename);
         return ResponseEntity.ok()
-                .header((HttpHeaders.CONTENT_DISPOSITION), "attatchment; filename=\""+fileName+"\"")
+                .header((HttpHeaders.CONTENT_DISPOSITION), "attatchment; filename=\""+filename+"\"")
                 .contentType(MediaType.APPLICATION_OCTET_STREAM)
                 .body(resource);
     }

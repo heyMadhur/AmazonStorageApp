@@ -1,12 +1,7 @@
 package com.StorageService.StorageApp.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
 import java.time.Instant;
 
-@Data
-@AllArgsConstructor
 public class FileSearchResponse {
     private String fileName;
     private Instant lastModified;
