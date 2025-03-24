@@ -101,8 +101,8 @@ app.s3.bucket=<YOUR_S3_BUCKET_NAME>
 
 ## Testing
 
-- **JUnit:** The project is structured to facilitate testing with JUnit. Write and run your tests using your IDE or Maven commands.
-- **Swagger/Postman:** You can test the endpoints using Swagger (if integrated) or Postman.
+- **JUnit:** Will be adding in next update
+- **Swagger/Postman:** Will be adding in next update.
 
 ## Extensibility
 
